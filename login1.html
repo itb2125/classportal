@@ -1,0 +1,84 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+
+        <title>STAFF - LOGIN </title>
+
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                font-family: sans-serif;
+            }
+            body{
+                background-image: url("1.jpg");
+                background-size: 100% 100%;
+            }
+            .login{
+                width: 350px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                color: rgb(10, 9, 9);
+            }
+            .login h1{
+                font-size: 40px;
+                text-align: center;
+                text-transform: uppercase;
+                margin: 40px  0;
+            }
+            .login  p{
+                font-size: 20px;
+                margin: 15px;
+
+            }
+            .login h2{
+                margin-bottom: 40px;
+            }
+            .login input{
+                font-size: 16px;
+                width: 100%;
+                padding: 15px 10px;
+                border: 0;
+                outline: none;
+                border-radius: 5px;
+            }
+            .button{
+                font-size: 18px;
+                font-weight: bold;
+                margin: 20px 0;
+                width:100px;
+                border-radius: 5px;
+                border: 0;
+                
+                
+                
+
+            }
+        </style>
+    </head>
+    <body onload='document.form1.text1.focus()'>
+    
+        <div class="login">
+            <h2>STAFF LOGIN</h2>
+                <p>User Name</p>
+                <form name="form1" action="#">
+                    <input type="text" name="user" placeholder="User Name" id="email" required />
+                    <p>Password</p>
+                    
+                    <input type="password" name="text1" placeholder="Password" required />
+                    <div class="button">
+                    <br>
+                    <input type="submit" style="background-color: rgb(20, 113, 156);color: white;" name="submit" value="Submit" onclick="CheckPassword(document.form1.text1,document.form1.user)"/>
+                    </div>
+                    </form>
+            <script src="checkpass2.js"></script>
+
+        </div>
+        <script>
+                
+            
+            </script>
+    </body>
+</html>

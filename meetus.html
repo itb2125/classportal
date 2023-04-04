@@ -1,0 +1,96 @@
+<html>
+<body>
+    <style>
+        #footer{
+    padding: 100px 0 20px;
+    background: #d8d6d6;
+}
+.footer-row{
+    width:80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left , .footer-right{
+    flex-basis:45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+    margin: 10px 0;
+}
+.footer-row p{
+    line-height: 35px;
+}
+.footer-left  .fa ,.footer-right  .fa{
+    font-size: 25px;
+    margin: 10px;
+}
+.footer-middle {
+    margin: 0 auto;
+    text-align: center;
+}
+@media screen and (max-width:770px){
+    .footer-left , .footer-right{
+        flex-basis: 100%;
+        font-size: 14px;
+        }
+    }
+    </style>
+<section id="footer">
+    <div class="title-text">
+        <p>CONTACT US</p>
+        <h1></h1>
+    </div>
+    <div class="footer-row">
+    <div class="footer-left">
+        <h1> Dr.R.Jayamala</h1>
+        <p> Assistant Professor(Sr.Gr)</p>
+        <p>Department of CSE</p>
+        <p>Phone No. : 9790441769</p>
+        <p>E-mail ID :<a href="mailto:jayajasmine07@gmail.com">jayajasmine07@gmail.com</a></p>
+    </div>
+    <div class="footer-right">
+        <h1>Anna University</h1>
+        <p>University College of Engineering,</p>
+        <p>BIT Campus,Trichy - 620 024.</p>
+        <p>itb2125@gmail.com</p>
+        <P>9876543210</P>
+    </div>
+    <div class="footer-middle">
+        <p>Copyright @ 2023 Vinothkumar B.Tech-IT | Anna University,Trichy.</p>
+
+    </div>
+</div>
+</section>
+
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+    sideNav.style.right == "-250px";
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right ="0";
+            menu.src="close.jpg";
+        }
+
+        else{
+            sideNav.style.right = "-250px";
+            menu.src="menu.jpg";
+        }
+    }
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+speed: 1000,
+speedAsDuration: true
+});
+</script>
+
+</body>
+</html>
